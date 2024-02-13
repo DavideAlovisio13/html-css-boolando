@@ -1,8 +1,74 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+/* general */
+
+:root {
+    --color-secondary: #ffffff;
+    --color-header-bg: #ff6900;
+    --color-primary: #1a1a1a;
+    --color-badge-g: #008000;
+    --color-badge-r: #ff0000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: var(--color-header-bg);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0px;
+    font-size: 1em;
+}
+
+
+nav img {
+    width: 100%;
+}
+
+#list-nav a{
+    padding-right: 10px;
+}
+
+#font-awe a{
+    padding-left: 10px;
+}
+#main-logo {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
 
 .container {
     background-color: black;
@@ -10,9 +76,6 @@
     margin: 20px auto;
     padding: 20px auto;
     color: aliceblue;
-    /* fare classi flex */
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -21,16 +84,10 @@
     width: calc(100% / 3 - 10px);
     cursor: pointer;
 }
+
 .card-image {
     position: relative;
 }
-
-img {
-    /* serve per levare il gap degli inline-block*/
-    display: block;
-    width: 100%;
-}
-
 
 .badge {
     background-color: green;
@@ -48,7 +105,7 @@ img {
     color: black;
 }
 
-.hearth {
+.heart {
     width: 100%;
     color: red;
     padding: 5px;
@@ -67,5 +124,22 @@ img {
 
 .card:hover .secondary-image {
     display: block;
+}
+
+/* flex classes */
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.j-content {
+    justify-content: space-between;
+}
+.align {
+    align-items: center;
+    align-content: center;
 }
 
