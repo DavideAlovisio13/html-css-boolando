@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px auto;
+    color: aliceblue;
+    /* fare classi flex */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    width: calc(100% / 3 - 10px);
+    cursor: pointer;
+}
+.card-image {
+    position: relative;
+}
+
+img {
+    /* serve per levare il gap degli inline-block*/
+    display: block;
+    width: 100%;
+}
+
+
+.badge {
+    background-color: green;
+    color: black;
+    padding: 5px;
+    width: 50px;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.badge-red {
+    background-color: red;
+    color: black;
+}
+
+.hearth {
+    width: 100%;
+    color: red;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.secondary-image {
+    display: none;
+}
+
+.card:hover .main-image {
+    display: none;
+}
+
+.card:hover .secondary-image {
+    display: block;
+}
+
