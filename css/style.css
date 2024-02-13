@@ -11,7 +11,6 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--color-secondary);
 }
 
 /* general */
@@ -26,6 +25,7 @@ a {
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: var(--color-secondary);
 }
 
 img {
@@ -37,6 +37,7 @@ img {
 header {
     width: 100%;
     background-color: var(--color-header-bg);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
 }
 
 nav {
@@ -53,10 +54,12 @@ nav img {
 
 #list-nav a{
     padding-right: 10px;
+    color: var(--color-secondary);
 }
 
 #font-awe a{
     padding-left: 10px;
+    color: var(--color-secondary);
 }
 #main-logo {
     width: 150px;
@@ -69,13 +72,13 @@ nav img {
 
 
 
-
+/* utility */
 .container {
-    background-color: black;
+    background-color: var(--color-secondary);
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px auto;
-    color: aliceblue;
+    color: var(--color-primary);
     gap: 10px;
 }
 
@@ -85,33 +88,54 @@ nav img {
     cursor: pointer;
 }
 
+/* main */
+
 .card-image {
     position: relative;
 }
 
-.badge {
-    background-color: green;
-    color: black;
+.badge-green {
+    background-color: var(--color-badge-g);
+    color: var(--color-secondary);
     padding: 5px;
-    width: 50px;
+    width: fit-content;
     text-align: right;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    left: 60px;
+    bottom: 70px;
 }
 
 .badge-red {
-    background-color: red;
-    color: black;
+    background-color: var(--color-badge-r);
+    color: var(--color-secondary);
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    left: 0px;
+    bottom: 70px;
 }
 
 .heart {
-    width: 100%;
-    color: red;
-    padding: 5px;
+    width: 50px;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
     text-align: center;
+    font-size: 40px;
     position: absolute;
-    bottom: 20px;
+    top: 10px;
+    right: 0px;
+}
+.description {
+    text-align: left;
+}
+
+.sold {
+    color: var(--color-badge-r);
+    padding-right: 5px;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
 
 .secondary-image {
