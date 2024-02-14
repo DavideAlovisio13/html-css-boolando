@@ -94,6 +94,7 @@ nav img {
   transform: translate(-50%, -50%);
   animation-name: slide-right;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slide-right {
@@ -127,6 +128,9 @@ nav img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #star3 {
@@ -140,6 +144,9 @@ nav img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #star4 {
@@ -153,6 +160,9 @@ nav img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #star5 {
@@ -166,6 +176,9 @@ nav img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #star6 {
@@ -179,8 +192,27 @@ nav img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
+#invisible h1 {
+  font-family: "Honk", system-ui;
+  font-style: italic;
+  font-size: 20em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animate__animate__zoomInDown {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /* main */
 
 main {
